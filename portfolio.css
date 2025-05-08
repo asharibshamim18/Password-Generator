@@ -1,0 +1,441 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1% 13%;
+    padding: 0;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section 1 container */
+#section-1 {
+    /* border: 2px solid red; */
+    min-height: 85vh;
+    display: flex;
+    flex-direction: row;
+    /* side by side on large */
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5%;
+    gap: 3%;
+}
+
+/* Text div */
+#sec-1a {
+    /* border: 2px solid green; */
+    flex: 1 1 40%;
+    /* grow and shrink, preferred 40% */
+    margin: 66px;
+    order: 1;
+    /* default order on large screen */
+}
+
+#sec-1a h4 {
+    font-size: 2.5rem;
+    line-height: 1.41;
+    margin: 10px 0;
+}
+
+#sec-1a h1 {
+    font-size: 3.7rem;
+    color: orange;
+    margin: 5px -9px 15px;
+}
+
+#sec-1a span {
+    font-weight: bold;
+}
+
+#section-1 button {
+    width: 70%;
+    max-width: 46%;
+    padding: 1% 0%;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: orange;
+    border: 2px solid darkgray;
+    transition: all 1s;
+}
+
+#section-1 button:hover {
+    transform: scale(1.1);
+}
+
+#downloadbtn {
+    width: 6%;
+}
+
+
+/* Image div */
+#section-1>div:nth-child(2) {
+    flex: 1 1 55%;
+    /* grow and shrink, preferred 55% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    /* default order on large screen */
+}
+
+#section-1 img {
+    max-width: 59%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* section2 */
+#section-2 {
+    /* border: 2px solid red; */
+    background-color: #121212;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#section-2 h3 {
+    font-size: 2.3rem;
+    margin: 2% 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#section-2 p {
+    text-align: center;
+    width: 73%;
+    margin-bottom: 1%;
+}
+
+#skills {
+    font-size: 1.3rem;
+    padding: 1%;
+    display: contents;
+
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.socialMedia {
+    width: 108%;
+    margin: 4% 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section3 */
+#section-3 {
+    background-color: black;
+    /* Dark background */
+    /* border: 2px solid green; */
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-3 h3 {
+    font-size: 2.3rem;
+    margin: 2% 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#section-3 h4 {
+    font-size: 1.4rem;
+    margin-bottom: 3%;
+    color: orange;
+}
+
+#sec-3main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec-3box {
+    background-color: #2c2c2c;
+    /* Card background */
+    color: white;
+    /* Text color */
+    border: 2px solid orange;
+    padding: 2rem;
+    margin: 2% 1%;
+    text-align: center;
+    max-width: 300px;
+    /* Adjust width */
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: transform 0.3s;
+    /* Hover effect */
+}
+
+.sec-3box:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+.button-container {
+    margin-top: 1rem;
+    /* Space between button container and text */
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.source-code {
+    background-color: #f78da7;
+    /* Source Code button color */
+    color: black;
+}
+
+.live-demo {
+    background-color: #54c8ff;
+    /* Live Demo button color */
+    color: black;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+    /* Darker effect on hover */
+}
+
+.source-code img {
+    width: 20px;
+    height: 20px;
+    margin: -4px 5px;
+}
+
+
+.live-demo img {
+    width: 20px;
+    height: 20px;
+    margin: -4px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section-4 */
+#section-4 {
+    background-color: #121212;
+    /* Dark background */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    /* Removed border */
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    /* Added padding */
+}
+
+#section-4 h3 {
+    font-size: 2.3rem;
+    margin: 2% 0;
+    text-align: center;
+    /* Centered the heading */
+    text-decoration: underline;
+    /* Underlined the heading */
+}
+
+.sec-4box {
+    background-color: #1e1e1e;
+    /* Darker box background */
+    border-radius: 5px;
+    /* Added rounded corners */
+    width: 320px;
+    /* Fixed width */
+    max-width: 90%;
+    /* Responsive */
+    text-align: center;
+    padding: 15px;
+    margin: 1rem 0;
+}
+
+.sec-4box span {
+    display: inline-block;
+    font-size: 1.5rem;
+    /* Adjustable icon size */
+    margin-bottom: 5px;
+    /* Space between icon and text */
+}
+
+.sec-4c {
+    text-align: center;
+    margin-top: 20px;
+    /* Space above */
+}
+
+.hire-me-button {
+    background-color: #e63946;
+    /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Rounded button */
+    padding: 10px 20px;
+    /* Padding for button */
+    cursor: pointer;
+}
+
+.hire-me-button:hover {
+    background-color: #d62839;
+    /* Button hover color */
+}
+
+
+
+
+
+
+
+
+
+/* Media queries: On smaller screens stack vertically and reverse order */
+@media (max-width: 768px) {
+    #section-1 {
+        flex-direction: column;
+        /* stack vertically */
+        min-height: auto;
+        padding: 2% 3%;
+        gap: 2%;
+        align-items: center;
+    }
+
+    /* reverse order: image first */
+    #sec-1a {
+        order: 2;
+        flex-basis: auto;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #section-1>div:nth-child(2) {
+        order: 1;
+        flex-basis: auto;
+        width: 70%;
+    }
+
+    #sec-1a h1 {
+        font-size: 2rem;
+    }
+
+    #sec-1a h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #sec-1a h1 {
+        font-size: 1.6rem;
+    }
+
+    #sec-1a h4 {
+        font-size: 1.1rem;
+    }
+}

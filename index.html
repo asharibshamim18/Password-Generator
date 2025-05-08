@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pass generate.css">
+    <title>Password Generater</title>
+</head>
+
+<body>
+
+    <section id="section-1">
+        <h1>Protect your data with a strong password</h1>
+        <button id="sec-1btn" onclick="location.href='#section-2 '">Start now</button>
+    </section>
+
+
+
+    <section id="section-2">
+
+        <div>
+            <h2>Generate your password</h2>
+        </div>
+
+
+        <div id="sec-2main">
+
+
+            <div id="CharacterLength">
+                <label>Character Length:</label>
+                <span id="rangeVal">0</span> <br>
+                <input type="range" oninput="stretch()" id="range" min="0" max="10" value="0">
+            </div>
+
+            <div id="checkbox">
+                <label>
+                    <input type="checkbox" id="upperCase"> Include Uppercase Letters
+                </label>
+
+                <label>
+                    <input type="checkbox" id="lowerCase"> Include Lowercase Letters
+                </label>
+
+                <label>
+                    <input type="checkbox" id="numbers"> Include Numbers
+                </label>
+
+                <label>
+                    <input type="checkbox" id="symbols"> Include Symbols
+                </label>
+            </div>
+
+
+            <div id="btn">
+                <button onclick="generate()">Generate</button>
+            </div>
+
+
+
+        </div>
+
+
+        <div id="pass">
+            <input type="text" id="password" readonly>
+            <button id="copyButton" onclick="copyToClipboard()">Copy</button>
+        </div>
+    </section>
+
+
+
+    <script src="pass generate.js"></script>
+</body>
+
+</html>
